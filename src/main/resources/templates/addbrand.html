@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" method="post" th:action="@{/brand/save}" th:object="${brand}">
+<input type="hidden" th:field="*{id}" />
+		Name
+		 <input type="text" th:field="*{name}" />
+		 <br></br>
+
+		Type
+		 <input type="text" th:field="*{type}" />
+		 <br></br>
+		 
+		 <br>
+		<input type="submit" value="Save" />
+		</br>
+	</form>
+</body>
+</html>
